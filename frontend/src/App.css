@@ -1,0 +1,111 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.trending-list {
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.latest-trend {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.latest-trend strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #007bff;
+}
+
+.latest-trend ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.latest-trend ul li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .latest-trend {
+    padding: 10px;
+  }
+
+  .latest-trend strong {
+    font-size: 0.9rem;
+  }
+
+  .latest-trend ul li {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .trending-list {
+    padding: 10px;
+  }
+}
